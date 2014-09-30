@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="org.jbbouille.mine.core.GridTest" duration-ms="26" started-at="2014-09-30T13:56:16Z" finished-at="2014-09-30T13:56:16Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="26" started-at="2014-09-30T13:56:16Z" finished-at="2014-09-30T13:56:16Z">
+      <class name="org.jbbouille.mine.core.GridTest">
+        <test-method status="PASS" signature="getAdjacentTest()[pri:0, instance:org.jbbouille.mine.core.GridTest@23c0e8aa]" name="getAdjacentTest" duration-ms="8" started-at="2014-09-30T15:56:16Z" finished-at="2014-09-30T15:56:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAdjacentTest -->
+        <test-method status="PASS" signature="revealTest()[pri:0, instance:org.jbbouille.mine.core.GridTest@23c0e8aa]" name="revealTest" duration-ms="1" started-at="2014-09-30T15:56:16Z" finished-at="2014-09-30T15:56:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- revealTest -->
+        <test-method status="PASS" signature="setBombTest()[pri:0, instance:org.jbbouille.mine.core.GridTest@23c0e8aa]" name="setBombTest" duration-ms="3" started-at="2014-09-30T15:56:16Z" finished-at="2014-09-30T15:56:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBombTest -->
+        <test-method status="PASS" signature="setValuesTest()[pri:0, instance:org.jbbouille.mine.core.GridTest@23c0e8aa]" name="setValuesTest" duration-ms="0" started-at="2014-09-30T15:56:16Z" finished-at="2014-09-30T15:56:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValuesTest -->
+      </class> <!-- org.jbbouille.mine.core.GridTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- org.jbbouille.mine.core.GridTest -->
+</testng-results>

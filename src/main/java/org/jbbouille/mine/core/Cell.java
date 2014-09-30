@@ -1,21 +1,23 @@
 package org.jbbouille.mine.core;
 
 /**
- * Created by excilysJB on 29/09/14.
+ * Created by JB on 29/09/14.
  */
 public class Cell {
     private boolean propagable;
     private boolean aBomb;
-    private short value;
-    private short length;
-    private short height;
+    private boolean visible;
+    private int value;
+    private int positionX;
+    private int positionY;
 
-    public Cell(short length, short height) {
-        this.propagable = false;
+    public Cell(int positionY, int positionX) {
+        this.propagable = true;
         this.aBomb = false;
+        this.visible = false;
         this.value = 0;
-        this.length = length;
-        this.height = height;
+        this.positionX = positionX;
+        this.positionY = positionY;
     }
 
     public boolean isPropagable() {
@@ -34,27 +36,35 @@ public class Cell {
         this.aBomb = aBomb;
     }
 
-    public short getValue() {
+    public boolean isVisible() {
+        return visible;
+    }
+
+    public void setVisible(boolean visible) {
+        this.visible = visible;
+    }
+
+    public int getValue() {
         return value;
     }
 
-    public void setValue(short value) {
+    public void setValue(int value) {
         this.value = value;
     }
 
-    public short getLength() {
-        return length;
+    public int getPositionX() {
+        return positionX;
     }
 
-    public void setLength(short length) {
-        this.length = length;
+    public void setPositionX(int positionX) {
+        this.positionX = positionX;
     }
 
-    public short getHeight() {
-        return height;
+    public int getPositionY() {
+        return positionY;
     }
 
-    public void setHeight(short height) {
-        this.height = height;
+    public void setPositionY(int positionY) {
+        this.positionY = positionY;
     }
 }
