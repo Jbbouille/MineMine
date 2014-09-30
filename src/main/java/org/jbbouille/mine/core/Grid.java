@@ -1,7 +1,7 @@
 package org.jbbouille.mine.core;
 
 import java.util.ArrayList;
-import java.util.Random;
+import java.util.Collections;
 
 /**
  * Created by JB on 29/09/14.
@@ -28,16 +28,22 @@ public class Grid {
     }
 
     private void setBombs(int nbBomb) {
-        for (int i = 0; i < nbBomb; i++) {
-            int randX = new Random().nextInt(width);
-            int randY = new Random().nextInt(height);
 
-            Cell cell = getCell(randX, randY);
+        ArrayList<Boolean> bombs = new ArrayList<>();
 
-            if(cell.isaBomb()) {
-                i--;
-            }else {
-                cell.setaBomb(true);
+        int nbOfCells = (width + 1) * (height + 1);
+
+        for (int i = 0; i < nbOfCells; i++) {
+            if(i < nbBomb) bombs.add(true);
+            else bombs.add(false);
+        }
+
+        Collections.shuffle(bombs);
+
+        for (int i = 0; i < cells.length; i++) {
+            for (int j = 0; j < cells[i].length; j++) {
+                if(bombs.get(0)) this.cells[i][j].setaBomb(true);
+                bombs.remove(0);
             }
         }
     }
